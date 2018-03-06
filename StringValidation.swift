@@ -1,0 +1,110 @@
+//
+//  StringValidation.swift
+//  Valor
+//
+//  Created by Vladas Drejeris on 06/03/2018.
+//
+
+import Foundation
+
+enum StringValidationError: Error {
+
+    case nonAlphanumericCharacters
+    case nonDecimalDigitCharacters
+    case invalidCharacters
+    case invalidCharacterCount
+    case tooFewCharacters
+    case tooManyCharacters
+    case notEqual
+    case empty
+    case notEmpty
+    case invalidString
+
+}
+
+
+extension String : Validatable {
+
+}
+
+extension Validator where Input == String {
+
+    private static func noCharacters(_ characterSet: CharacterSet,
+                                     _ error: Error) -> Validator<Input> {
+        return Validator { input in
+            guard input.rangeOfCharacter(from: characterSet) == nil else {
+                throw error
+            }
+        }
+    }
+
+
+    static func noCharacters(_ characterSet: CharacterSet) -> Validator<Input> {
+        return noCharacters(characterSet, StringValidationError.invalidCharacters)
+    }
+
+    static func characters(_ characterSet: CharacterSet) -> Validator<Input> {
+        return noCharacters(characterSet.inverted, StringValidationError.invalidCharacters)
+    }
+
+    static func alphanumeric() -> Validator<Input> {
+        return noCharacters(CharacterSet.alphanumerics.inverted, StringValidationError.nonAlphanumericCharacters)
+    }
+
+    static func decimalDigits() -> Validator<Input> {
+        return noCharacters(CharacterSet.decimalDigits.inverted, StringValidationError.nonDecimalDigitCharacters)
+    }
+
+    static func empty() -> Validator<Input> {
+        return Validator { input in
+            guard input.isEmpty == true else {
+                throw StringValidationError.notEmpty
+            }
+        }
+    }
+
+    static func notEmpty() -> Validator<Input> {
+        return Validator { input in
+            guard input.isEmpty == false else {
+                throw StringValidationError.empty
+            }
+        }
+    }
+
+    private static func count(_ op: @escaping (Int, Int) -> Bool,
+                              _ requirement: Int,
+                              _ error: Error) -> Validator<Input> {
+        return Validator { input in
+            guard op(input.count, requirement) == true else {
+                throw error
+            }
+        }
+    }
+
+    static func count(_ op: @escaping (Int, Int) -> Bool,
+                      _ requirement: Int) -> Validator<Input> {
+        return count(op, requirement, StringValidationError.invalidCharacterCount)
+    }
+
+    static func count(moreThan requirement: Int) -> Validator<Input> {
+        return count(>, requirement, StringValidationError.tooFewCharacters)
+    }
+
+    static func count(lessThan requirement: Int) -> Validator<Input> {
+        return count(<, requirement, StringValidationError.tooManyCharacters)
+    }
+
+    static func equals(_ to: Input) -> Validator<Input> {
+        return Validator.operation(==, to, error: StringValidationError.notEqual)
+    }
+
+    static func regex(_ requirement: String) -> Validator<Input> {
+        return Validator { input in
+            let predicate = NSPredicate(format: "SELF MATCHES %@", requirement)
+            guard predicate.evaluate(with: input) == true else {
+                throw StringValidationError.invalidString
+            }
+        }
+    }
+
+}

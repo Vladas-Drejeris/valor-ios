@@ -1,0 +1,16 @@
+PODS:
+  - Valor (0.1.0)
+
+DEPENDENCIES:
+  - Valor (from `../`)
+
+EXTERNAL SOURCES:
+  Valor:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Valor: 92de6b76dcd3e82fd1d364fdce3f47777b036538
+
+PODFILE CHECKSUM: 58076df19e66379e4fedd5917ff7f383a222aa18
+
+COCOAPODS: 1.4.0

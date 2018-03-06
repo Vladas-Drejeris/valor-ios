@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		511A3FB23A03FB5BF49B751F /* Valor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Valor.podspec; path = ../Valor.podspec; sourceTree = "<group>"; };
+		511A3FB23A03FB5BF49B751F /* Valor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Valor.podspec; path = ../Valor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* Valor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +39,12 @@
 		607FACE51AFB9204008FA782 /* Valor_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Valor_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7BF8B22F3C403A2C1D708504 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7BF8B22F3C403A2C1D708504 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		91BAC96CA4754D5A96697F60 /* Pods-Valor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Valor_Tests/Pods-Valor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4F83763559CE70E7227197D /* Pods-Valor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Valor_Tests/Pods-Valor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BA73AF10B47211ADF4D048F0 /* Pods_Valor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA858C2774D27EC55C103B48 /* Pods-Valor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Valor_Example/Pods-Valor_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D5E958DB11C8C4D1FC03548F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D5E958DB11C8C4D1FC03548F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D81E841CCD38191450EFF5B1 /* Pods_Valor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA6F7232741DC0D3576F2CE /* Pods-Valor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Valor_Example/Pods-Valor_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = M28PFH78NY;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = M28PFH78NY;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -517,6 +519,7 @@
 			baseConfigurationReference = CA858C2774D27EC55C103B48 /* Pods-Valor_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M28PFH78NY;
 				INFOPLIST_FILE = Valor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -532,6 +535,7 @@
 			baseConfigurationReference = DDA6F7232741DC0D3576F2CE /* Pods-Valor_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M28PFH78NY;
 				INFOPLIST_FILE = Valor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -546,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91BAC96CA4754D5A96697F60 /* Pods-Valor_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M28PFH78NY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4F83763559CE70E7227197D /* Pods-Valor_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = M28PFH78NY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
