@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Valor_Example' do
+  pod 'Valor', :path => '../'
+
+  target 'Valor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
