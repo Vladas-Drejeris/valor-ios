@@ -14,10 +14,10 @@
 		4A53F8833DA74ED094A71DCC18E2D5DD /* Pods-Valor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A4246B5E5A43769BE3E09B0189CB72 /* Pods-Valor_Tests-dummy.m */; };
 		8E317F0CFB08338B6FE3F657DA6F6F6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B4A71D1CA589EBF7B28B77F67CF9BE42 /* Valor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB404D8B5671BDB2197B134128C6C9C5 /* Valor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1F9EFB5204EA34F006C4306 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFB4204EA34F006C4306 /* Validator.swift */; };
-		D1F9EFB7204EA366006C4306 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFB6204EA366006C4306 /* Validatable.swift */; };
-		D1F9EFB9204EA376006C4306 /* Valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFB8204EA376006C4306 /* Valid.swift */; };
-		D1F9EFBB204EA390006C4306 /* StringValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFBA204EA390006C4306 /* StringValidation.swift */; };
+		D1F9EFC2204EA6C3006C4306 /* StringValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFBE204EA6C3006C4306 /* StringValidation.swift */; };
+		D1F9EFC3204EA6C4006C4306 /* Valid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFBF204EA6C3006C4306 /* Valid.swift */; };
+		D1F9EFC4204EA6C4006C4306 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFC0204EA6C3006C4306 /* Validatable.swift */; };
+		D1F9EFC5204EA6C4006C4306 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9EFC1204EA6C3006C4306 /* Validator.swift */; };
 		D637C00D4C075797DD6A27A1030A8A08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F47C67579DCC54E4D6FABFBA8B8C0CA9 /* Pods-Valor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A7761305CD23EE5CF905FCA2D8974 /* Pods-Valor_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -61,10 +61,10 @@
 		C82205277359058646595E88F7C59706 /* Pods-Valor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Valor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C922F832D98C8E3EEA94AF2B7DC11AEF /* Pods-Valor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Valor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEA327636AF5A7E917DB73870077BC7 /* Pods-Valor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Valor_Example-umbrella.h"; sourceTree = "<group>"; };
-		D1F9EFB4204EA34F006C4306 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
-		D1F9EFB6204EA366006C4306 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
-		D1F9EFB8204EA376006C4306 /* Valid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valid.swift; sourceTree = "<group>"; };
-		D1F9EFBA204EA390006C4306 /* StringValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringValidation.swift; sourceTree = "<group>"; };
+		D1F9EFBE204EA6C3006C4306 /* StringValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringValidation.swift; sourceTree = "<group>"; };
+		D1F9EFBF204EA6C3006C4306 /* Valid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Valid.swift; sourceTree = "<group>"; };
+		D1F9EFC0204EA6C3006C4306 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		D1F9EFC1204EA6C3006C4306 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		E0F162ADC8565514E6BCD04B62C0941A /* Pods-Valor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Valor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E5BFC81E44D10BA9B722D616C49B7B88 /* Pods-Valor_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Valor_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EFF4E855E8ECB7EB37502FFAFB0206DD /* Valor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Valor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -141,10 +141,7 @@
 		735772819A4B0E7E67A85708CD096B79 /* Valor */ = {
 			isa = PBXGroup;
 			children = (
-				D1F9EFB4204EA34F006C4306 /* Validator.swift */,
-				D1F9EFB6204EA366006C4306 /* Validatable.swift */,
-				D1F9EFB8204EA376006C4306 /* Valid.swift */,
-				D1F9EFBA204EA390006C4306 /* StringValidation.swift */,
+				D1F9EFBC204EA6C3006C4306 /* Classes */,
 				116E3811F1F1149CE5DA304E98A98900 /* Pod */,
 				8ED5791CA7904B9C09F7C6999125246D /* Support Files */,
 			);
@@ -219,6 +216,18 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1F9EFBC204EA6C3006C4306 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D1F9EFBE204EA6C3006C4306 /* StringValidation.swift */,
+				D1F9EFBF204EA6C3006C4306 /* Valid.swift */,
+				D1F9EFC0204EA6C3006C4306 /* Validatable.swift */,
+				D1F9EFC1204EA6C3006C4306 /* Validator.swift */,
+			);
+			name = Classes;
+			path = Valor/Classes;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -344,11 +353,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1F9EFB7204EA366006C4306 /* Validatable.swift in Sources */,
-				D1F9EFB5204EA34F006C4306 /* Validator.swift in Sources */,
-				D1F9EFBB204EA390006C4306 /* StringValidation.swift in Sources */,
-				D1F9EFB9204EA376006C4306 /* Valid.swift in Sources */,
 				3E1476F97763E3D4CF4F6A20F3FE6FB4 /* Valor-dummy.m in Sources */,
+				D1F9EFC4204EA6C4006C4306 /* Validatable.swift in Sources */,
+				D1F9EFC5204EA6C4006C4306 /* Validator.swift in Sources */,
+				D1F9EFC3204EA6C4006C4306 /* Valid.swift in Sources */,
+				D1F9EFC2204EA6C3006C4306 /* StringValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
