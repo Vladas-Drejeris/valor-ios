@@ -71,7 +71,7 @@ public extension Validator where Input == String {
         }
     }
 
-    public private static func count(_ op: @escaping (Int, Int) -> Bool,
+    private static func count(_ op: @escaping (Int, Int) -> Bool,
                               _ requirement: Int,
                               _ error: Error) -> Validator<Input> {
         return Validator { input in
