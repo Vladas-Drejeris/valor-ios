@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Valor
 //
-//  Created by vladas.d@ito.lt on 03/06/2018.
-//  Copyright (c) 2018 vladas.d@ito.lt. All rights reserved.
+//  Created by v.drejeris@gmail.com on 03/06/2018.
+//  Copyright (c) 2018 v.drejeris@gmail.com. All rights reserved.
 //
 
 import UIKit

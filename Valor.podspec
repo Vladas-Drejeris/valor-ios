@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Valor'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Valor.'
+  s.version          = '0.1.1'
+  s.summary          = 'A lightweight data validation library for iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/vladas.d@ito.lt/Valor'
+  s.homepage         = 'https://github.com/Vladas-Drejeris/valor-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vladas.d@ito.lt' => 'vladas.d@ito.lt' }
+  s.author           = { 'v.drejeris@gmail.com' => 'v.drejeris@gmail.com' }
   s.source           = { :git => 'https://github.com/Vladas-Drejeris/valor-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

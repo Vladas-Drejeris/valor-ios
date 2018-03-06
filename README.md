@@ -1,6 +1,6 @@
 # Valor
 
-[![CI Status](http://img.shields.io/travis/vladas.d@ito.lt/Valor.svg?style=flat)](https://travis-ci.org/vladas.d@ito.lt/Valor)
+[![CI Status](http://img.shields.io/travis/v.drejeris@gmail.com/Valor.svg?style=flat)](https://travis-ci.org/v.drejeris@gmail.com/Valor)
 [![Version](https://img.shields.io/cocoapods/v/Valor.svg?style=flat)](http://cocoapods.org/pods/Valor)
 [![License](https://img.shields.io/cocoapods/l/Valor.svg?style=flat)](http://cocoapods.org/pods/Valor)
 [![Platform](https://img.shields.io/cocoapods/p/Valor.svg?style=flat)](http://cocoapods.org/pods/Valor)
@@ -22,7 +22,7 @@ pod 'Valor'
 
 ## Author
 
-vladas.d@ito.lt, vladas.d@ito.lt
+v.drejeris@gmail.com
 
 ## License
 

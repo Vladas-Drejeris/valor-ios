@@ -9,8 +9,8 @@ import Foundation
 
 public protocol Validatable {
 
-    public func validated(by validators: Validator<Self>...) throws -> Valid<Self>
-    public func validated(by validators: [Validator<Self>]) throws -> Valid<Self>
+    func validated(by validators: Validator<Self>...) throws -> Valid<Self>
+    func validated(by validators: [Validator<Self>]) throws -> Valid<Self>
 
 }
 
