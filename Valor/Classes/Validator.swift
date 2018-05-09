@@ -11,6 +11,9 @@ public struct Validator<Input> {
 
     public var validate: (Input) throws -> ()
 
+    public init(validate: @escaping (Input) throws -> ()) {
+        self.validate = validate
+    }
 }
 
 public extension Validator {
